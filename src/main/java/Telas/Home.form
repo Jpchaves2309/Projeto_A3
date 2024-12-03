@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Container class="javax.swing.JMenu" name="jMenu1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jMenu1"/>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+        <Property name="useNullLayout" type="boolean" value="true"/>
+      </Layout>
+    </Container>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[970, 625]"/>
+    </Property>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,-89,0,0,3,-64"/>
+  </AuxValues>
+
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+    <Property name="useNullLayout" type="boolean" value="true"/>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JButton" name="Home">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="14" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="HOME"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Hand Cursor"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="HomeActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="Home.setOpaque(false); // bot&#xe3;o transparente&#xa;Home.setContentAreaFilled(false); // Remove a cor de fundo&#xa;Home.setBorderPainted(false); // Remove a borda"/>
+        <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="Home.setForeground(new java.awt.Color(221, 221, 221)); &#xa;&#xa;Home.addMouseListener(new java.awt.event.MouseAdapter() {&#xa;    private javax.swing.Timer timer; //anima&#xe7;&#xe3;o&#xa;&#xa;    public void mouseEntered(java.awt.event.MouseEvent evt) {&#xa;        if (timer !=null) {&#xa;            timer.stop();&#xa;        }&#xa;        //mudan&#xe7;a de cor&#xa;        timer = new javax.swing.Timer(18, e -&gt; { //velocidade &#xa;            int r = Math.max(0, Home.getForeground().getRed() - 10); &#xa;            int g = Math.max(0, Home.getForeground().getGreen() - 10); &#xa;            int b = Math.max(0, Home.getForeground().getBlue() - 10); &#xa;            Home.setForeground(new java.awt.Color(r, g, b));&#xa;            if (r &lt;= 0 &amp;&amp; g &lt;= 0 &amp;&amp; b &lt;= 0) {&#xa;                timer.stop(); // Para o timer quando a cor preta for atingida&#xa;            }&#xa;        });&#xa;        timer.start(); // Come&#xe7;a a anima&#xe7;&#xe3;o&#xa;    }&#xa;&#xa;    public void mouseExited(java.awt.event.MouseEvent evt) {&#xa;&#xa;        if (timer != null) {&#xa;            timer.stop();&#xa;        }&#xa;        // Timer para a anima&#xe7;&#xe3;o de volta &#xe0; cor original&#xa;        timer = new javax.swing.Timer(18, e -&gt; { &#xa;            int r = Math.min(255, Home.getForeground().getRed() + 10); &#xa;            int g = Math.min(255, Home.getForeground().getGreen() + 10); &#xa;            int b = Math.min(255, Home.getForeground().getBlue() + 10); &#xa;            Home.setForeground(new java.awt.Color(r, g, b));&#xa;            if (r &gt;= 221 &amp;&amp; g &gt;= 221 &amp;&amp; b &gt;= 221) {&#xa;                timer.stop(); &#xa;            }&#xa;        });&#xa;        timer.start();&#xa;    }&#xa;});"/>
+      </AuxValues>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="10" y="10" width="120" height="44"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JButton" name="Denuncia">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="14" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="DENUNCIE"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Hand Cursor"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DenunciaActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="Denuncia.setOpaque(false); &#xa;Denuncia.setContentAreaFilled(false); &#xa;Denuncia.setBorderPainted(false);"/>
+        <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="Denuncia.setForeground(new java.awt.Color(221, 221, 221)); &#xa;&#xa;Denuncia.addMouseListener(new java.awt.event.MouseAdapter() {&#xa;    private javax.swing.Timer timer; &#xa;&#xa;    public void mouseEntered(java.awt.event.MouseEvent evt) {&#xa;        if (timer !=null) {&#xa;            timer.stop();&#xa;        }&#xa;        &#xa;        timer = new javax.swing.Timer(18, e -&gt; { &#xa;            int r = Math.max(123, Denuncia.getForeground().getRed() - 10); &#xa;            int g = Math.max(0, Denuncia.getForeground().getGreen() - 10); &#xa;            int b = Math.max(0, Denuncia.getForeground().getBlue() - 10); &#xa;            Denuncia.setForeground(new java.awt.Color(r, g, b));&#xa;            if (r &lt;= 123 &amp;&amp; g &lt;= 0 &amp;&amp; b &lt;= 0) {&#xa;                timer.stop(); &#xa;            }&#xa;        });&#xa;        timer.start(); &#xa;    }&#xa;&#xa;    public void mouseExited(java.awt.event.MouseEvent evt) {&#xa;&#xa;        if (timer != null) {&#xa;            timer.stop();&#xa;        }&#xa;        // Timer para a anima&#xe7;&#xe3;o de volta &#xe0; cor original&#xa;        timer = new javax.swing.Timer(18, e -&gt; { &#xa;            int r = Math.min(255, Denuncia.getForeground().getRed() + 10); &#xa;            int g = Math.min(255, Denuncia.getForeground().getGreen() + 10); &#xa;            int b = Math.min(255, Denuncia.getForeground().getBlue() + 10); &#xa;            Denuncia.setForeground(new java.awt.Color(r, g, b));&#xa;            if (r &gt;= 221 &amp;&amp; g &gt;= 221 &amp;&amp; b &gt;= 221) {&#xa;                timer.stop(); &#xa;            }&#xa;        });&#xa;        timer.start(); &#xa;    }&#xa;});"/>
+      </AuxValues>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="154" y="10" width="120" height="44"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JButton" name="Queimadas">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="14" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="QUEIMADAS"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Hand Cursor"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="QueimadasActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="Queimadas.setOpaque(false); &#xa;Queimadas.setContentAreaFilled(false); &#xa;Queimadas.setBorderPainted(false);"/>
+        <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="Queimadas.setForeground(new java.awt.Color(221, 221, 221)); &#xa;&#xa;Queimadas.addMouseListener(new java.awt.event.MouseAdapter() {&#xa;    private javax.swing.Timer timer; &#xa;&#xa;    public void mouseEntered(java.awt.event.MouseEvent evt) {&#xa;        if (timer !=null) {&#xa;            timer.stop();&#xa;        }&#xa;        &#xa;        timer = new javax.swing.Timer(18, e -&gt; { &#xa;            int r = Math.max(123, Queimadas.getForeground().getRed() - 10); &#xa;            int g = Math.max(0, Queimadas.getForeground().getGreen() - 10); &#xa;            int b = Math.max(0, Queimadas.getForeground().getBlue() - 10); &#xa;            Queimadas.setForeground(new java.awt.Color(r, g, b));&#xa;            if (r &lt;= 123 &amp;&amp; g &lt;= 0 &amp;&amp; b &lt;= 0) {&#xa;                timer.stop(); &#xa;            }&#xa;        });&#xa;        timer.start(); &#xa;    }&#xa;&#xa;    public void mouseExited(java.awt.event.MouseEvent evt) {&#xa;&#xa;        if (timer != null) {&#xa;            timer.stop();&#xa;        }&#xa;        // Timer para a anima&#xe7;&#xe3;o de volta &#xe0; cor original&#xa;        timer = new javax.swing.Timer(18, e -&gt; { &#xa;            int r = Math.min(255, Queimadas.getForeground().getRed() + 10); &#xa;            int g = Math.min(255, Queimadas.getForeground().getGreen() + 10); &#xa;            int b = Math.min(255, Queimadas.getForeground().getBlue() + 10); &#xa;            Queimadas.setForeground(new java.awt.Color(r, g, b));&#xa;            if (r &gt;= 221 &amp;&amp; g &gt;= 221 &amp;&amp; b &gt;= 221) {&#xa;                timer.stop(); &#xa;            }&#xa;        });&#xa;        timer.start(); &#xa;    }&#xa;});"/>
+      </AuxValues>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="297" y="10" width="120" height="44"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JButton" name="Perfil">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="14" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="PERFIL"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Hand Cursor"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="PerfilActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="Perfil.setOpaque(false); &#xa;Perfil.setContentAreaFilled(false); &#xa;Perfil.setBorderPainted(false);"/>
+        <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="Perfil.setForeground(new java.awt.Color(221, 221, 221)); &#xa;&#xa;Perfil.addMouseListener(new java.awt.event.MouseAdapter() {&#xa;    private javax.swing.Timer timer; &#xa;&#xa;    public void mouseEntered(java.awt.event.MouseEvent evt) {&#xa;        if (timer !=null) {&#xa;            timer.stop();&#xa;        }&#xa;        &#xa;        timer = new javax.swing.Timer(18, e -&gt; { &#xa;            int r = Math.max(123, Perfil.getForeground().getRed() - 10); &#xa;            int g = Math.max(0, Perfil.getForeground().getGreen() - 10); &#xa;            int b = Math.max(0, Perfil.getForeground().getBlue() - 10); &#xa;            Perfil.setForeground(new java.awt.Color(r, g, b));&#xa;            if (r &lt;= 123 &amp;&amp; g &lt;= 0 &amp;&amp; b &lt;= 0) {&#xa;                timer.stop(); &#xa;            }&#xa;        });&#xa;        timer.start(); &#xa;    }&#xa;&#xa;    public void mouseExited(java.awt.event.MouseEvent evt) {&#xa;&#xa;        if (timer != null) {&#xa;            timer.stop();&#xa;        }&#xa;        // Timer para a anima&#xe7;&#xe3;o de volta &#xe0; cor original&#xa;        timer = new javax.swing.Timer(18, e -&gt; { &#xa;            int r = Math.min(255, Perfil.getForeground().getRed() + 10); &#xa;            int g = Math.min(255, Perfil.getForeground().getGreen() + 10); &#xa;            int b = Math.min(255, Perfil.getForeground().getBlue() + 10); &#xa;            Perfil.setForeground(new java.awt.Color(r, g, b));&#xa;            if (r &gt;= 221 &amp;&amp; g &gt;= 221 &amp;&amp; b &gt;= 221) {&#xa;                timer.stop(); &#xa;            }&#xa;        });&#xa;        timer.start(); &#xa;    }&#xa;});"/>
+      </AuxValues>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="587" y="10" width="120" height="44"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JButton" name="AboutUs">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="14" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="SOBRE N&#xd3;S"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Hand Cursor"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AboutUsActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="AboutUs.setOpaque(false); &#xa;AboutUs.setContentAreaFilled(false); &#xa;AboutUs.setBorderPainted(false);"/>
+        <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="AboutUs.setForeground(new java.awt.Color(221, 221, 221)); &#xa;&#xa;AboutUs.addMouseListener(new java.awt.event.MouseAdapter() {&#xa;    private javax.swing.Timer timer; &#xa;&#xa;    public void mouseEntered(java.awt.event.MouseEvent evt) {&#xa;        if (timer !=null) {&#xa;            timer.stop();&#xa;        }&#xa;        &#xa;        timer = new javax.swing.Timer(18, e -&gt; { &#xa;            int r = Math.max(123, AboutUs.getForeground().getRed() - 10); &#xa;            int g = Math.max(0, AboutUs.getForeground().getGreen() - 10); &#xa;            int b = Math.max(0, AboutUs.getForeground().getBlue() - 10); &#xa;            AboutUs.setForeground(new java.awt.Color(r, g, b));&#xa;            if (r &lt;= 123 &amp;&amp; g &lt;= 0 &amp;&amp; b &lt;= 0) {&#xa;                timer.stop(); &#xa;            }&#xa;        });&#xa;        timer.start(); &#xa;    }&#xa;&#xa;    public void mouseExited(java.awt.event.MouseEvent evt) {&#xa;&#xa;        if (timer != null) {&#xa;            timer.stop();&#xa;        }&#xa;        // Timer para a anima&#xe7;&#xe3;o de volta &#xe0; cor original&#xa;        timer = new javax.swing.Timer(18, e -&gt; { &#xa;            int r = Math.min(255, AboutUs.getForeground().getRed() + 10); &#xa;            int g = Math.min(255, AboutUs.getForeground().getGreen() + 10); &#xa;            int b = Math.min(255, AboutUs.getForeground().getBlue() + 10); &#xa;            AboutUs.setForeground(new java.awt.Color(r, g, b));&#xa;            if (r &gt;= 221 &amp;&amp; g &gt;= 221 &amp;&amp; b &gt;= 221) {&#xa;                timer.stop(); &#xa;            }&#xa;        });&#xa;        timer.start(); &#xa;    }&#xa;});"/>
+      </AuxValues>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="442" y="10" width="120" height="44"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="2" name="C:\Users\User\OneDrive\Documentos\NetBeansProjects\A3_Testes\src\main\resources\images\TelaHome.png"/>
+        </Property>
+        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[970, 610]"/>
+        </Property>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[970, 610]"/>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="0" y="0" width="960" height="600"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+  </SubComponents>
+</Form>
